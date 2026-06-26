@@ -1,11 +1,10 @@
 name: Pixabay Monitor
 
 on:
+  schedule:
+  - cron: "*/5 * * * *"
 
   workflow_dispatch:
-
-  schedule:
-    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
