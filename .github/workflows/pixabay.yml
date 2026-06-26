@@ -40,7 +40,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
 
-          git add pixabay.json
+          git add pixabay.jsonl
 
           git diff --cached --quiet || git commit -m "Actualización automática"
 
