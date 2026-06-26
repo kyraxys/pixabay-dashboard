@@ -5,7 +5,7 @@ import re
 import os
 
 URL = "https://pixabay.com/users/kyraxys-41857870/"
-FILE = "pixabay.jsonl"  # JSON Lines (robusto en CI)
+FILE = "pixabay.json"  # JSON Lines (robusto en CI)
 
 
 def to_int(value: str):
