@@ -2,6 +2,7 @@ from playwright.sync_api import sync_playwright
 from datetime import datetime, timezone
 import json
 import re
+import os
 
 URL = "https://pixabay.com/users/kyraxys-41857870/"
 
@@ -93,8 +94,25 @@ with sync_playwright() as p:
         "editor_choice": get_editor_choice()
     }
   
-    with open("pixabay.json", "w") as f:
-       json.dump(data, f, indent=2)
-    print(json.dumps(data, indent=2))
+
+    
+
+    FILE = "pixabay.json"
+
+    if os.path.exists(FILE):
+        with open(FILE, "r") as f:
+            try:
+                history = json.load(f)
+            except:
+                history = []
+    else:
+        history = []
+    
+    history.append(data)
+    
+    with open(FILE, "w") as f:
+        json.dump(history, f, indent=2)
+    
+    #print(json.dumps(data, indent=2))
 
     browser.close()
