@@ -5,10 +5,10 @@ import re
 import os
 
 URL = "https://pixabay.com/users/kyraxys-41857870/"
+FILE = "pixabay.json"
 
 
 def to_int(value: str):
-    """Convierte valores como 70,663 / 2.47M / 15K a enteros."""
     if not value:
         return None
 
@@ -27,8 +27,21 @@ def to_int(value: str):
         return None
 
     number, suffix = m.groups()
-
     return int(float(number) * multipliers[suffix])
+
+
+def load_history():
+    if not os.path.exists(FILE):
+        return []
+
+    try:
+        with open(FILE, "r") as f:
+            content = f.read().strip()
+            if not content:
+                return []
+            return json.loads(content)
+    except:
+        return []
 
 
 with sync_playwright() as p:
@@ -50,19 +63,17 @@ with sync_playwright() as p:
         timeout=60000
     )
 
-    #page.wait_for_timeout(5000)
     page.wait_for_load_state("networkidle")
     page.wait_for_timeout(2000)
 
     def get_metric(label):
-
         locator = page.locator(f"text={label}")
 
         if locator.count() == 0:
             return None
 
         try:
-            parent = locator.first.locator("xpath=..")
+            parent = locator.first.locator("xpath=ancestor::*[1]")
             text = parent.inner_text()
 
             match = re.search(r"[\d,.]+[KMB]?", text)
@@ -70,11 +81,10 @@ with sync_playwright() as p:
             if match:
                 return to_int(match.group(0))
 
-        except Exception:
-            pass
+        except:
+            return None
 
         return None
-
 
     def get_editor_choice():
         return 1 if page.locator("text=Editor's Choice").count() > 0 else 0
@@ -85,7 +95,6 @@ with sync_playwright() as p:
     data = {
         "timestamp": now.isoformat(),
         "epoch_ms": int(now.timestamp() * 1000),
-
         "followers": get_metric("Followers"),
         "following": get_metric("Following"),
         "likes": get_metric("Likes"),
@@ -93,26 +102,27 @@ with sync_playwright() as p:
         "downloads": get_metric("Downloads"),
         "editor_choice": get_editor_choice()
     }
-  
 
-    
 
-    FILE = "pixabay.json"
+    # -------------------------
+    # LOAD HISTORY (SAFE)
+    # -------------------------
+    history = load_history()
 
-    if os.path.exists(FILE):
-        with open(FILE, "r") as f:
-            try:
-                history = json.load(f)
-            except:
-                history = []
-    else:
-        history = []
-    
+    # append new snapshot
     history.append(data)
-    
+
+    # opcional: limitar tamaño
+    history = history[-500:]
+
+
+    # -------------------------
+    # SAVE
+    # -------------------------
     with open(FILE, "w") as f:
         json.dump(history, f, indent=2)
-    
-    #print(json.dumps(data, indent=2))
+
+
+    print(json.dumps(data, indent=2))
 
     browser.close()
