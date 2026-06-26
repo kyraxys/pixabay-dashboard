@@ -49,7 +49,9 @@ with sync_playwright() as p:
         timeout=60000
     )
 
-    page.wait_for_timeout(5000)
+    #page.wait_for_timeout(5000)
+    page.wait_for_load_state("networkidle")
+    page.wait_for_timeout(2000)
 
     def get_metric(label):
 
