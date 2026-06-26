@@ -1,1 +1,1 @@
-# pixabay-dashboard
+# pixabay-dashboard v.2
