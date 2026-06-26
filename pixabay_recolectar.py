@@ -5,7 +5,7 @@ import re
 import os
 
 URL = "https://pixabay.com/users/kyraxys-41857870/"
-FILE = "pixabay.json"
+FILE = "pixabay.jsonl"  # JSON Lines (robusto en CI)
 
 
 def to_int(value: str):
@@ -30,24 +30,11 @@ def to_int(value: str):
     return int(float(number) * multipliers[suffix])
 
 
-def load_history():
-    if not os.path.exists(FILE):
-        return []
-
-    try:
-        with open(FILE, "r") as f:
-            content = f.read().strip()
-            if not content:
-                return []
-            return json.loads(content)
-    except:
-        return []
-
-
 with sync_playwright() as p:
 
     browser = p.chromium.launch(
-        headless=True
+        headless=True,
+        args=["--no-sandbox", "--disable-dev-shm-usage"]
     )
 
     context = browser.new_context(
@@ -57,14 +44,10 @@ with sync_playwright() as p:
 
     page = context.new_page()
 
-    page.goto(
-        URL,
-        wait_until="domcontentloaded",
-        timeout=60000
-    )
+    page.goto(URL, wait_until="domcontentloaded", timeout=60000)
 
     page.wait_for_load_state("networkidle")
-    page.wait_for_timeout(2000)
+    page.wait_for_timeout(5000)
 
     def get_metric(label):
         locator = page.locator(f"text={label}")
@@ -105,22 +88,10 @@ with sync_playwright() as p:
 
 
     # -------------------------
-    # LOAD HISTORY (SAFE)
+    # APPEND SAFE (NO JSON LOAD)
     # -------------------------
-    history = load_history()
-
-    # append new snapshot
-    history.append(data)
-
-    # opcional: limitar tamaño
-    history = history[-500:]
-
-
-    # -------------------------
-    # SAVE
-    # -------------------------
-    with open(FILE, "w") as f:
-        json.dump(history, f, indent=2)
+    with open(FILE, "a") as f:
+        f.write(json.dumps(data) + "\n")
 
 
     print(json.dumps(data, indent=2))
