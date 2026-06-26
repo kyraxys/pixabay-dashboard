@@ -5,7 +5,7 @@ import re
 import os
 
 URL = "https://pixabay.com/users/kyraxys-41857870/"
-FILE = "pixabay.json"  # JSON Lines (robusto en CI)
+FILE = "pixabay.json"
 
 
 def to_int(value: str):
@@ -64,7 +64,7 @@ with sync_playwright() as p:
             if match:
                 return to_int(match.group(0))
 
-        except:
+        except Exception:
             return None
 
         return None
@@ -72,12 +72,10 @@ with sync_playwright() as p:
     def get_editor_choice():
         return 1 if page.locator("text=Editor's Choice").count() > 0 else 0
 
-
     now = datetime.now(timezone.utc)
 
     data = {
-        "timestamp": now.isoformat(),
-        "epoch_ms": int(now.timestamp() * 1000),
+        "date": now.isoformat(),
         "followers": get_metric("Followers"),
         "following": get_metric("Following"),
         "likes": get_metric("Likes"),
@@ -86,14 +84,27 @@ with sync_playwright() as p:
         "editor_choice": get_editor_choice()
     }
 
+    # Si existe el archivo, cargar el contenido
+    if os.path.exists(FILE):
+        try:
+            with open(FILE, "r", encoding="utf-8") as f:
+                records = json.load(f)
 
-    # -------------------------
-    # APPEND SAFE (NO JSON LOAD)
-    # -------------------------
-    with open(FILE, "a") as f:
-        f.write(json.dumps(data) + "\n")
+            if not isinstance(records, list):
+                records = []
 
+        except (json.JSONDecodeError, FileNotFoundError):
+            records = []
+    else:
+        records = []
 
-    print(json.dumps(data, indent=2))
+    # Agregar el nuevo registro
+    records.append(data)
+
+    # Guardar el JSON completo
+    with open(FILE, "w", encoding="utf-8") as f:
+        json.dump(records, f, indent=2, ensure_ascii=False)
+
+    print(json.dumps(data, indent=2, ensure_ascii=False))
 
     browser.close()
