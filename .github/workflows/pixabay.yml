@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "58 14 * * *"
+    - cron: "10 12 * * *"
     #- cron: "*/30 * * * *"
 
 permissions:
