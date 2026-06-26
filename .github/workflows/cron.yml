@@ -1,0 +1,47 @@
+name: Pixabay Monitor
+
+on:
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+
+  scrape:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Instalar Chromium
+        run: playwright install chromium
+
+      - name: Ejecutar scraper
+        run: python pixabay_recolectar.py
+
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          git add pixabay.jsonl
+
+          git diff --cached --quiet || git commit -m "Actualización automática"
+
+          git push
