@@ -9,11 +9,5 @@ jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
-      - name: Print event
-        run: echo "Evento: ${{ github.event_name }}"
       - name: Print UTC date
         run: date -u
-      - name: Print ref
-        run: echo "Ref: $GITHUB_REF"
-      - name: Print actor
-        run: echo "Actor: ${{ github.actor }}"
