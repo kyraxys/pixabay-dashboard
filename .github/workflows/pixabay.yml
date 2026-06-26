@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "10 12 * * *"
+    - cron: "*/3 * * * *"  # Cada 30 minutos (solo para pruebas)
     #- cron: "*/30 * * * *"
 
 permissions:
