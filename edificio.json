@@ -1,7 +1,7 @@
 {
-  "mes": "2026-07",
-  "unidades": [
+  "registros": [
     {
+      "fecha": "2025-08-01",
       "unidad": "1A",
       "piso": 1,
       "alquiler": 850000,
@@ -9,13 +9,15 @@
       "estado": "Pagado"
     },
     {
+      "fecha": "2025-08-01",
       "unidad": "1B",
       "piso": 1,
       "alquiler": 890000,
       "gastos": 72000,
-      "estado": "Pendiente"
+      "estado": "Pagado"
     },
     {
+      "fecha": "2025-08-01",
       "unidad": "2A",
       "piso": 2,
       "alquiler": 910000,
@@ -23,6 +25,7 @@
       "estado": "Pagado"
     },
     {
+      "fecha": "2025-08-01",
       "unidad": "2B",
       "piso": 2,
       "alquiler": 930000,
@@ -30,13 +33,15 @@
       "estado": "Pagado"
     },
     {
+      "fecha": "2025-08-01",
       "unidad": "3A",
       "piso": 3,
       "alquiler": 970000,
       "gastos": 81000,
-      "estado": "Pendiente"
+      "estado": "Pagado"
     },
     {
+      "fecha": "2025-08-01",
       "unidad": "3B",
       "piso": 3,
       "alquiler": 990000,
@@ -44,6 +49,7 @@
       "estado": "Pagado"
     },
     {
+      "fecha": "2025-08-01",
       "unidad": "4A",
       "piso": 4,
       "alquiler": 1030000,
@@ -51,6 +57,7 @@
       "estado": "Pagado"
     },
     {
+      "fecha": "2025-08-01",
       "unidad": "4B",
       "piso": 4,
       "alquiler": 1050000,
@@ -58,6 +65,7 @@
       "estado": "Moroso"
     },
     {
+      "fecha": "2025-08-01",
       "unidad": "5A",
       "piso": 5,
       "alquiler": 1100000,
@@ -65,10 +73,891 @@
       "estado": "Pagado"
     },
     {
+      "fecha": "2025-08-01",
       "unidad": "5B",
       "piso": 5,
       "alquiler": 1120000,
       "gastos": 98000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 876000,
+      "gastos": 66000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 917000,
+      "gastos": 73000,
+      "estado": "Pendiente"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 937000,
+      "gastos": 69000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 958000,
+      "gastos": 76000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 999000,
+      "gastos": 83000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1020000,
+      "gastos": 81000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1061000,
+      "gastos": 87000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1082000,
+      "gastos": 94000,
+      "estado": "Moroso"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1133000,
+      "gastos": 97000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-09-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1154000,
+      "gastos": 100000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 902000,
+      "gastos": 68000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 944000,
+      "gastos": 75000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 965000,
+      "gastos": 71000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 987000,
+      "gastos": 78000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1029000,
+      "gastos": 84000,
+      "estado": "Pendiente"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1050000,
+      "gastos": 82000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1093000,
+      "gastos": 88000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1114000,
+      "gastos": 96000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1167000,
+      "gastos": 99000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-10-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1188000,
+      "gastos": 102000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 929000,
+      "gastos": 69000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 973000,
+      "gastos": 76000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 994000,
+      "gastos": 72000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 1016000,
+      "gastos": 80000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1060000,
+      "gastos": 86000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1082000,
+      "gastos": 84000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1126000,
+      "gastos": 90000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1147000,
+      "gastos": 98000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1202000,
+      "gastos": 101000,
+      "estado": "Pendiente"
+    },
+    {
+      "fecha": "2025-11-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1224000,
+      "gastos": 104000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 957000,
+      "gastos": 70000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 1002000,
+      "gastos": 78000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 1024000,
+      "gastos": 74000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 1047000,
+      "gastos": 81000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1092000,
+      "gastos": 88000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1114000,
+      "gastos": 86000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1159000,
+      "gastos": 92000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1182000,
+      "gastos": 100000,
+      "estado": "Moroso"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1238000,
+      "gastos": 103000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2025-12-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1261000,
+      "gastos": 106000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 985000,
+      "gastos": 72000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 1032000,
+      "gastos": 79000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 1055000,
+      "gastos": 75000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 1078000,
+      "gastos": 83000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1124000,
+      "gastos": 89000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1148000,
+      "gastos": 87000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1194000,
+      "gastos": 94000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1217000,
+      "gastos": 102000,
+      "estado": "Moroso"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1275000,
+      "gastos": 105000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-01-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1298000,
+      "gastos": 108000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 1015000,
+      "gastos": 73000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 1063000,
+      "gastos": 81000,
+      "estado": "Pendiente"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 1087000,
+      "gastos": 77000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 1110000,
+      "gastos": 84000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1158000,
+      "gastos": 91000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1182000,
+      "gastos": 89000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1230000,
+      "gastos": 96000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1254000,
+      "gastos": 104000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1313000,
+      "gastos": 107000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-02-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1337000,
+      "gastos": 110000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 1045000,
+      "gastos": 75000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 1095000,
+      "gastos": 83000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 1119000,
+      "gastos": 78000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 1144000,
+      "gastos": 86000,
+      "estado": "Pendiente"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1193000,
+      "gastos": 93000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1218000,
+      "gastos": 91000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1267000,
+      "gastos": 98000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1291000,
+      "gastos": 106000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1353000,
+      "gastos": 109000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-03-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1377000,
+      "gastos": 113000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 1077000,
+      "gastos": 76000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 1127000,
+      "gastos": 84000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 1153000,
+      "gastos": 80000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 1178000,
+      "gastos": 88000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1229000,
+      "gastos": 95000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1254000,
+      "gastos": 93000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1305000,
+      "gastos": 100000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1330000,
+      "gastos": 108000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1393000,
+      "gastos": 111000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-04-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1419000,
+      "gastos": 115000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 1109000,
+      "gastos": 78000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 1161000,
+      "gastos": 86000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 1187000,
+      "gastos": 81000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 1213000,
+      "gastos": 90000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1266000,
+      "gastos": 97000,
+      "estado": "Pendiente"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1292000,
+      "gastos": 94000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1344000,
+      "gastos": 102000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1370000,
+      "gastos": 110000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1435000,
+      "gastos": 114000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-05-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1461000,
+      "gastos": 117000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 1142000,
+      "gastos": 79000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 1196000,
+      "gastos": 88000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 1223000,
+      "gastos": 83000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 1250000,
+      "gastos": 91000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1304000,
+      "gastos": 99000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1330000,
+      "gastos": 96000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1384000,
+      "gastos": 104000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1411000,
+      "gastos": 112000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1478000,
+      "gastos": 116000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-06-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1505000,
+      "gastos": 119000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 1177000,
+      "gastos": 81000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 1232000,
+      "gastos": 90000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 1260000,
+      "gastos": 85000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 1287000,
+      "gastos": 93000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 1343000,
+      "gastos": 101000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 1370000,
+      "gastos": 98000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1426000,
+      "gastos": 106000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1453000,
+      "gastos": 114000,
+      "estado": "Pendiente"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1523000,
+      "gastos": 118000,
+      "estado": "Pagado"
+    },
+    {
+      "fecha": "2026-07-01",
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1550000,
+      "gastos": 122000,
       "estado": "Pagado"
     }
   ]
