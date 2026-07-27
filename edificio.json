@@ -1,0 +1,75 @@
+{
+  "mes": "2026-07",
+  "unidades": [
+    {
+      "unidad": "1A",
+      "piso": 1,
+      "alquiler": 850000,
+      "gastos": 65000,
+      "estado": "Pagado"
+    },
+    {
+      "unidad": "1B",
+      "piso": 1,
+      "alquiler": 890000,
+      "gastos": 72000,
+      "estado": "Pendiente"
+    },
+    {
+      "unidad": "2A",
+      "piso": 2,
+      "alquiler": 910000,
+      "gastos": 68000,
+      "estado": "Pagado"
+    },
+    {
+      "unidad": "2B",
+      "piso": 2,
+      "alquiler": 930000,
+      "gastos": 75000,
+      "estado": "Pagado"
+    },
+    {
+      "unidad": "3A",
+      "piso": 3,
+      "alquiler": 970000,
+      "gastos": 81000,
+      "estado": "Pendiente"
+    },
+    {
+      "unidad": "3B",
+      "piso": 3,
+      "alquiler": 990000,
+      "gastos": 79000,
+      "estado": "Pagado"
+    },
+    {
+      "unidad": "4A",
+      "piso": 4,
+      "alquiler": 1030000,
+      "gastos": 85000,
+      "estado": "Pagado"
+    },
+    {
+      "unidad": "4B",
+      "piso": 4,
+      "alquiler": 1050000,
+      "gastos": 92000,
+      "estado": "Moroso"
+    },
+    {
+      "unidad": "5A",
+      "piso": 5,
+      "alquiler": 1100000,
+      "gastos": 95000,
+      "estado": "Pagado"
+    },
+    {
+      "unidad": "5B",
+      "piso": 5,
+      "alquiler": 1120000,
+      "gastos": 98000,
+      "estado": "Pagado"
+    }
+  ]
+}
