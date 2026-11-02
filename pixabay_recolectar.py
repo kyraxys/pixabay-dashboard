@@ -5,7 +5,7 @@ import re
 import os
 import time
 
-URL = "https://pixabay.com/users/kyraxys-41857870/"
+URL = "https://pixabay.com/users/auvryon-41857870/"
 FILE = "pixabay.json"
 
 
